@@ -1,0 +1,25 @@
+{
+  "nome": "Nicolas Ribeiro",
+  "email": "nicolas.riber@gmail.com",
+  "cidade": "Brasília, DF",
+  "atualizadoEm": "2026-11-13",
+  "descricao": "Nicolas Ribeiro, estudante de Ciência da Computação no Distrito Federal. Projetos, estudos e certificados.",
+  "titulo": ["Estudo computação.", "Construo os meus apps."],
+  "botaoInicio": "Conheça mais",
+  "sobreTitulo": "Estudante de Ciência da Computação no DF.",
+  "sobre": [
+    "Sou o Nicolas e estou no 2º semestre do curso.",
+    "Este é o meu canto na internet: aqui ficam os projetos que eu construo, os certificados dos cursos que eu faço e o que estou estudando agora."
+  ],
+  "imagens": {
+    "inicio": "",
+    "inicioAlt": "",
+    "sobre": "",
+    "sobreAlt": "",
+    "estudos": "",
+    "estudosAlt": "",
+    "certificados": "",
+    "certificadosAlt": ""
+  },
+  "redes": []
+}

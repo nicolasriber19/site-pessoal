@@ -1,0 +1,126 @@
+html {
+  font-size: 100%;           /* respeita o tamanho de letra que o visitante escolheu */
+  font-synthesis: none;
+  scroll-padding-top: calc(var(--barra-h) + 8px);
+}
+body {
+  padding-top: var(--barra-h);
+  font-size: var(--t-corpo);
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-feature-settings: "ss01" 0;
+}
+main { display: block; }
+main:focus { outline: none; }
+
+[hidden] { display: none !important; }
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+
+/* Sem JavaScript, nada fica escondido esperando o engine. */
+.no-js [data-sc-cue],
+.no-js [data-sc-in],
+.no-js [data-sc-stagger] > * { opacity: 1 !important; transform: none !important; }
+
+.largura { width: 100%; max-width: var(--largura); margin-inline: auto; padding-inline: var(--gutter); }
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+.pular {
+  position: fixed; left: 12px; top: -64px; z-index: 100;
+  padding: 10px 16px;
+  background: var(--sc-ink); color: var(--sc-canvas);
+  font-weight: 600; text-decoration: none;
+  border-radius: var(--r-pilula);
+  transition: top 160ms var(--sc-ease-out);
+}
+.pular:focus { top: 12px; }
+
+:focus-visible { outline: 2px solid var(--sc-accent); outline-offset: 3px; border-radius: 6px; }
+
+/* ------------------------------------------------- títulos de duas cores --
+   Primeira frase em tinta, segunda em cinza, como na referência. */
+.titulo-duplo {
+  margin: 0;
+  font-family: var(--sc-font-display);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  color: var(--sc-ink);
+}
+.titulo-duplo > span { display: block; text-wrap: balance; }
+.titulo-duplo .tom { color: var(--sc-ink); } /* as duas frases em preto, em todos os títulos */
+.titulo-duplo--hero { font-size: var(--t-hero); line-height: 1.02; }.titulo-duplo--secao { font-size: var(--t-secao); line-height: 1.04; letter-spacing: -0.03em; }
+.titulo-duplo--faixa { font-size: var(--t-faixa); line-height: 1.08; letter-spacing: -0.03em; }
+
+/* ------------------------------------------------------------- pílula -- */
+.pilula {
+  display: inline-flex; align-items: center; gap: 10px;
+  min-height: 48px;
+  padding: 0 20px 0 24px;
+  background: var(--sc-surface);
+  color: var(--sc-ink);
+  border-radius: var(--r-pilula);
+  box-shadow: var(--sombra-pilula);
+  font-size: 0.9375rem; font-weight: 500; line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: box-shadow 180ms var(--sc-ease-out), transform 140ms var(--sc-ease-out);
+}
+.pilula svg { transition: transform 180ms var(--sc-ease-out); }
+@media (hover: hover) and (pointer: fine) {
+  .pilula:hover { box-shadow: var(--sombra-pilula-forte); transform: translateY(-1px); }
+  .pilula:hover svg { transform: translate(2px, -2px); }
+}
+.pilula:active { transform: translateY(0) scale(0.98); }
+/* pílula redonda só com ícone (redes) */
+.pilula--icone { width: 48px; padding: 0; justify-content: center; }
+@media (hover: hover) and (pointer: fine) {
+  .pilula--icone:hover svg { transform: none; }
+}
+
+/* ------------------------------------------------------ lugar de imagem -- */
+.imagem { margin: 0; position: relative; overflow: hidden; border-radius: var(--r-cartao); background: var(--cartao); }
+.imagem img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.imagem--vazia {
+  display: grid; place-items: center;
+  background:
+    radial-gradient(120% 90% at 50% 38%, var(--cartao-claro) 0%, var(--cartao) 62%, #E5E5E3 100%);
+}
+.imagem__aviso {
+  display: grid; justify-items: center; gap: 10px;
+  font-size: var(--t-pequeno); font-weight: 500;
+  color: var(--sc-ink-soft);
+}
+.imagem__aviso svg { opacity: 0.7; }
+
+/* Foto recortada: fundo de estúdio cinza com luz suave atrás da cabeça, a pessoa apoiada
+   na borda de baixo (o corte da foto coincide com a borda do quadro). */
+.imagem--recorte {
+  background:
+    radial-gradient(55% 45% at 50% 30%, rgb(255 255 255 / 0.85) 0%, rgb(255 255 255 / 0) 70%),
+    radial-gradient(120% 90% at 50% 100%, #E2E2E0 0%, var(--cartao) 55%, var(--cartao-claro) 100%);
+}
+.imagem--recorte .imagem__recorte {
+  position: absolute;
+  left: 50%; bottom: -2px;
+  translate: -50% 0;
+  width: auto; height: 93%;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 24px rgb(17 18 20 / 0.12));
+}
+
+/* Selo de prévia com conteúdo de exemplo (só aparece com CONTEUDO=exemplo). */
+.aviso-exemplo {
+  position: fixed; right: 12px; bottom: 12px; z-index: 90;
+  margin: 0; padding: 8px 14px;
+  background: var(--sc-ink); color: var(--sc-canvas);
+  border-radius: var(--r-pilula);
+  font-size: var(--t-pequeno);
+}

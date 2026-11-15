@@ -1,0 +1,5 @@
+[
+  { "titulo": "Minha Garagem", "descricao": "App para cuidar de veículos, na web e no Android, que funciona sem internet. Um agente de IA lê a foto do painel e registra a quilometragem.", "ficha": ["TypeScript", "React Native", "Expo"], "ano": "2026", "links": [{ "rotulo": "Ver o app", "url": "#" }] },
+  { "titulo": "Jarvis", "descricao": "Assistente de IA em Python, com voz, palavra de ativação, agenda e Telegram.", "ficha": ["Python"], "ano": "2026", "links": [] },
+  { "titulo": "Placar da Vida", "descricao": "Placar de metas pessoais com sequência de vitórias, também como app Android.", "ficha": ["JavaScript", "Android"], "ano": "2026", "links": [] }
+]

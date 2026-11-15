@@ -1,0 +1,62 @@
+[
+  {
+    "titulo": "WRW, Women Rocking the World",
+    "descricao": "Plataforma de networking em 10 idiomas: a IA cruza o que cada membro oferece com o que procura. Numa equipe de quatro, fiz esse cruzamento e o globo 3D do site.",
+    "ficha": [
+      "Para cliente",
+      "Em andamento"
+    ],
+    "ano": "2026",
+    "imagem": "imagens/projeto-wrw.webp",
+    "imagemAlt": "Página inicial do WRW num navegador, com o título “Inteligência que conecta negócios que acontecem” ao lado de um globo 3D",
+    "links": [
+      {
+        "rotulo": "Abrir o WRW",
+        "url": "https://wrwglobal.org"
+      }
+    ]
+  },
+  {
+    "titulo": "Patas em Casa",
+    "descricao": "App de adoção de cães e gatos, feito em grupo na disciplina de Engenharia de Software do CEUB.",
+    "ficha": [
+      "Projeto em grupo",
+      "Engenharia de Software"
+    ],
+    "ano": "2026",
+    "imagem": "imagens/projeto-patas.webp",
+    "imagemAlt": "Tela inicial do app Patas em Casa num celular, com a busca de pets para adoção",
+    "links": []
+  },
+  {
+    "titulo": "Jarvis, meu assistente pessoal",
+    "descricao": "Assistente de IA em Python: entende a minha voz, responde falando, acorda com “Hey Jarvis”, cuida da minha agenda e conversa comigo pelo Telegram.",
+    "ficha": [
+      "Python",
+      "IA",
+      "Em construção"
+    ],
+    "ano": "2026",
+    "imagem": "imagens/projeto-jarvis.webp",
+    "imagemAlt": "Ilustração de uma esfera de voz com ondas sonoras, representando o assistente Jarvis",
+    "links": []
+  },
+  {
+    "titulo": "Apps de evolução pessoal",
+    "descricao": "Sites e aplicativos para acompanhar hábitos, metas e progresso. Os principais são o Evolui e o Placar da Vida.",
+    "ficha": [
+      "React",
+      "PWA",
+      "Android"
+    ],
+    "ano": "2026",
+    "imagem": "imagens/projeto-evolucao.webp",
+    "imagemAlt": "Tela de boas-vindas do app Evolui num celular",
+    "links": [
+      {
+        "rotulo": "Abrir o Evolui",
+        "url": "https://evolui-gilt.vercel.app"
+      }
+    ]
+  }
+]

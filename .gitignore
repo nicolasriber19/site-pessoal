@@ -1,0 +1,8 @@
+node_modules/
+dist/
+/tipografia/
+/lab/
+.DS_Store
+/originais/
+.env
+.env.*

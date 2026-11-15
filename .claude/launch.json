@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site-pessoal",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "npm run dev -- --port 5190 --strictPort"],
+      "port": 5190
+    },
+    {
+      "name": "site-pessoal-exemplo",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "set CONTEUDO=exemplo&& npm run dev -- --port 5191 --strictPort"],
+      "port": 5191
+    }
+  ]
+}

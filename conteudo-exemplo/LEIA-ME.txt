@@ -1,0 +1,2 @@
+Conteúdo de EXEMPLO, só para ver como o site fica com projetos e certificados.
+Não é publicado. Prévia: no painel do navegador, entrada "site-pessoal-exemplo" (porta 5191).

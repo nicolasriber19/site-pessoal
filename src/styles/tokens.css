@@ -1,0 +1,54 @@
+/* ---------------------------------------------------------------- fonte --
+   Geist, local (woff2, subconjunto latino, cobre o português), licença OFL,
+   cópia em public/fonts/. Variável: um arquivo de 29 KB cobre os pesos 100 a 900. */
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/geist-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* --- cores: claro, neutro, quase sem cor (como a referência) ------------ */
+  --sc-canvas:     #F6F6F5;   /* fundo da página                              */
+  --sc-surface:    #FFFFFF;   /* botões em pílula                             */
+  --cartao:        #ECECEA;   /* cartões e lugares de imagem                  */
+  --cartao-claro:  #F1F1EF;
+  --sc-ink:        #111214;   /* texto: 17,3:1 no fundo                       */
+  --sc-ink-soft:   #5F636A;   /* texto secundário: 5,6:1 no fundo, 5,1:1 no cartão */
+  --sc-accent:     #2340C8;   /* cobalto: só foco e seleção                   */
+  --sc-accent-ink: #FFFFFF;
+  --sc-hairline:        rgb(17 18 20 / 0.08);
+  --sc-hairline-strong: rgb(17 18 20 / 0.14);
+
+  /* --- tipo ---------------------------------------------------------------- */
+  --sc-font-display: "Geist", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --sc-font-text:    "Geist", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Escala fluida: tamanho em 390 px → em 1440 px (fórmula clamp da skill de tipografia). */
+  --t-pequeno: 0.875rem;                                        /* 14 px          */
+  --t-corpo:   clamp(1rem, 0.977rem + 0.095vw, 1.0625rem);     /* 16 → 17        */
+  --t-cartao:  clamp(1rem, 0.954rem + 0.19vw, 1.125rem);       /* 16 → 18        */
+  --t-destaque: clamp(1.5rem, 1.314rem + 0.762vw, 2rem);       /* 24 → 32        */
+  --t-numero:  clamp(2.5rem, 2.036rem + 1.905vw, 3.75rem);     /* 40 → 60        */
+  --t-faixa:   clamp(1.75rem, 1.286rem + 1.905vw, 3rem);       /* 28 → 48        */
+  --t-secao:   clamp(2rem, 1.443rem + 2.286vw, 3.5rem);        /* 32 → 56        */
+  --t-hero:    clamp(2.75rem, 2.007rem + 3.048vw, 4.75rem);    /* 44 → 76        */
+
+  /* --- forma --------------------------------------------------------------- */
+  --r-cartao: 20px;
+  --r-grande: 28px;
+  --r-pilula: 999px;
+  --sombra-pilula: 0 1px 2px rgb(17 18 20 / 0.06), 0 10px 24px -14px rgb(17 18 20 / 0.30);
+  --sombra-pilula-forte: 0 2px 4px rgb(17 18 20 / 0.08), 0 16px 32px -14px rgb(17 18 20 / 0.34);
+
+  /* --- medidas ------------------------------------------------------------- */
+  --barra-h: 68px;
+  --gutter: clamp(20px, 4vw, 56px);
+  --largura: 76rem;
+}
+
+@media (max-width: 900px) {
+  :root { --barra-h: 60px; --r-cartao: 16px; --r-grande: 22px; }
+}

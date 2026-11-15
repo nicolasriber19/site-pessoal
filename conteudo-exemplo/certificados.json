@@ -1,0 +1,4 @@
+[
+  { "titulo": "Curso de exemplo A", "instituicao": "Instituição de exemplo", "cargaHoraria": "40 h", "data": "2026-10-20", "arquivo": "", "verificacao": "#" },
+  { "titulo": "Curso de exemplo B", "instituicao": "Instituição de exemplo", "cargaHoraria": "12 h", "data": "2026-11-10", "arquivo": "#", "verificacao": "" }
+]

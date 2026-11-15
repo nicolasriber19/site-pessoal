@@ -1,0 +1,5 @@
+[
+  { "tipo": "Estudando", "texto": "Ciência da Computação, 2º semestre", "quando": "desde 2026.1" },
+  { "tipo": "Meta", "texto": "Exemplo: conseguir um estágio em TI", "quando": "2027" },
+  { "tipo": "Aprendendo", "texto": "Exemplo: TypeScript e testes automatizados", "quando": "nov. 2026" }
+]

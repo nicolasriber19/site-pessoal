@@ -1,0 +1,29 @@
+{
+  "nome": "Nicolas Ribeiro",
+  "email": "nicolas.riber@gmail.com",
+  "cidade": "Brasília, DF",
+  "atualizadoEm": "2026-11-15",
+  "descricao": "Nicolas Ribeiro, estudante de Ciência da Computação no Distrito Federal e Conselheiro de Inovação da ACDF Jovem. Projetos, estudos e trajetória.",
+  "titulo": ["Estudo computação.", "Construo os meus apps."],
+  "botaoInicio": "Conheça mais",
+  "sobreTitulo": "Conselheiro de Inovação da ACDF Jovem.",
+  "sobre": [
+    "Em 12 de novembro de 2026, tomei posse como Conselheiro de Inovação da ACDF Jovem, da Associação Comercial do Distrito Federal, na gestão 2025/2028.",
+    "Ao mesmo tempo, estudo Ciência da Computação no DF, estou no 2º semestre e construo os meus próprios apps."
+  ],
+  "imagens": {
+    "inicio": "imagens/nicolas-recorte.webp",
+    "inicioAlt": "Nicolas Ribeiro sorrindo, de terno cinza e camisa branca",
+    "inicioRecorte": true,
+    "sobre": "imagens/acdf-posse.webp",
+    "sobreAlt": "Termo de posse de Nicolas Silveira Ribeiro como Conselheiro de Inovação da ACDF Jovem, gestão 2025/2028, Brasília, 12 de novembro de 2026",
+    "estudos": "imagens/estudos-codigo.webp",
+    "estudosAlt": "Tela do editor com o arquivo estudos.py: uma classe Produto em Python, com métodos para ler e alterar nome e valor",
+    "trajetoria": "imagens/ceub-notebook.webp",
+    "trajetoriaAlt":"Notebook aberto numa sala do CEUB, com a página do Espaço Aluno no monitor ao fundo"
+  },
+  "redes": [
+    { "rotulo": "LinkedIn", "url": "https://www.linkedin.com/in/nicolas-silveira-ribeiro/" },
+    { "rotulo": "GitHub", "url": "https://github.com/nicolasriber19" }
+  ]
+}

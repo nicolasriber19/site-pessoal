@@ -1,0 +1,1 @@
+Coloque aqui os arquivos dos certificados (PDF ou imagem) e aponte para eles em conteudo/certificados.json, campo "arquivo", por exemplo: "certificados/curso-x.pdf".
