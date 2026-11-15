@@ -296,10 +296,45 @@ function rodape(d) {
 </footer>`;
 }
 
+// Prévia do link no WhatsApp, LinkedIn etc. (Open Graph). Só sai quando perfil.json tem "site":
+// as redes exigem endereço absoluto para a imagem.
+function compartilhar(d) {
+  const p = d.perfil;
+  if (!/^https?:\/\//.test(p.site || '')) return '';
+  const url = p.site.endsWith('/') ? p.site : `${p.site}/`;
+  const img = p.previa ? new URL(p.previa, url).href : '';
+  const titulo = p.tituloCompartilhar || p.nome;
+  const desc = p.descricao || '';
+  const tags = [
+    `<link rel="canonical" href="${esc(url)}">`,
+    '<meta property="og:type" content="website">',
+    '<meta property="og:locale" content="pt_BR">',
+    `<meta property="og:site_name" content="${esc(p.nome)}">`,
+    `<meta property="og:url" content="${esc(url)}">`,
+    `<meta property="og:title" content="${esc(titulo)}">`,
+    `<meta property="og:description" content="${esc(desc)}">`,
+    `<meta name="twitter:card" content="${img ? 'summary_large_image' : 'summary'}">`,
+    `<meta name="twitter:title" content="${esc(titulo)}">`,
+    `<meta name="twitter:description" content="${esc(desc)}">`,
+  ];
+  if (img) {
+    tags.push(
+      `<meta property="og:image" content="${esc(img)}">`,
+      `<meta property="og:image:alt" content="${esc(p.previaAlt || titulo)}">`,
+      `<meta name="twitter:image" content="${esc(img)}">`,
+    );
+    if (p.previaLargura && p.previaAltura) {
+      tags.push(`<meta property="og:image:width" content="${+p.previaLargura}">`, `<meta property="og:image:height" content="${+p.previaAltura}">`);
+    }
+  }
+  return tags.join('\n');
+}
+
 // ---------------------------------------------------------------- página --
 
 export function renderizar(html, d, { exemplo = false } = {}) {
   const blocos = {
+    compartilhar: compartilhar(d),
     barra: barra(d),
     inicio: inicio(d),
     sobre: sobre(d),

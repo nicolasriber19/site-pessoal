@@ -109,6 +109,14 @@ O título da linha 03 se ajusta sozinho: "Minha trajetória até aqui." só com 
 
 O PDF ou a imagem vai em `public/certificados/`. `arquivo` e `verificacao` podem ficar vazios.
 
+### Prévia do link (WhatsApp, LinkedIn)
+
+Em `perfil.json`: `"site"` (endereço completo do site), `"previa"` (imagem em `public/`, hoje `previa.jpg`,
+1200 × 627), `"previaAlt"`, `"previaLargura"` e `"previaAltura"`. O título da prévia é o `"nome"` (ou
+`"tituloCompartilhar"`, se existir) e o texto é a `"descricao"`. A fonte da imagem está em
+`originais/previa.html`. WhatsApp e LinkedIn guardam a prévia antiga por um tempo; no LinkedIn dá para
+forçar a atualização em linkedin.com/post-inspector.
+
 ### Redes (LinkedIn, GitHub)
 
 Em `perfil.json`:
