@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Currículo · Nicolas Silveira Ribeiro</title>
+<!-- Fonte do currículo em PDF. Para gerar: node curriculo/gerar.mjs (sai em public/curriculo-nicolas-ribeiro.pdf). -->
+<style>
+  @font-face { font-family: 'Geist'; src: url('../public/fonts/geist-latin-wght-normal.woff2') format('woff2'); font-weight: 100 900; }
+  @page { size: A4; margin: 0; }
+  :root { --ink: #111214; --soft: #5F636A; --linha: rgb(17 18 20 / 0.14); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    width: 210mm; min-height: 297mm;
+    padding: 13mm 16mm 10mm;
+    font-family: 'Geist', system-ui, sans-serif;
+    font-size: 9.2pt; line-height: 1.45; color: var(--ink);
+    font-feature-settings: 'tnum';
+    background: #fff;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* ------------------------------------------------------------ topo -- */
+  header { padding-bottom: 5.5mm; border-bottom: 0.6pt solid var(--linha); }
+  h1 { font-size: 25pt; font-weight: 500; line-height: 1.05; letter-spacing: -0.03em; }
+  .cargo { margin-top: 2mm; font-size: 11pt; color: var(--soft); letter-spacing: -0.005em; }
+  .cargo b { font-weight: 500; color: var(--ink); }
+  .contato { margin-top: 3.2mm; display: flex; flex-wrap: wrap; gap: 1mm 5mm; font-size: 8.4pt; }
+  .contato a, .contato span { white-space: nowrap; }
+  .contato a { border-bottom: 0.5pt solid var(--linha); }
+
+  /* --------------------------------------------------------- seções -- */
+  section { display: grid; grid-template-columns: 31mm 1fr; column-gap: 6mm; padding: 3.8mm 0; border-bottom: 0.6pt solid var(--linha); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { font-size: 7.6pt; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--soft); padding-top: 0.9mm; }
+  .item + .item { margin-top: 3mm; }
+  .item__topo { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  h3 { font-size: 10pt; font-weight: 600; letter-spacing: -0.01em; }
+  h3 span { font-weight: 400; color: var(--soft); }
+  .quando { flex-shrink: 0; font-size: 8.4pt; color: var(--soft); }
+  .onde { font-size: 8.6pt; color: var(--soft); margin-top: 0.4mm; }
+  p + p { margin-top: 1.2mm; }
+  ul { margin-top: 1.4mm; padding-left: 3.6mm; }
+  li { padding-left: 0.6mm; }
+  li + li { margin-top: 0.7mm; }
+  li::marker { color: var(--soft); }
+  .resumo { font-size: 9.6pt; line-height: 1.5; }
+  .chips { display: flex; flex-wrap: wrap; gap: 1.4mm; }
+  .chips span { padding: 0.7mm 2.4mm; border-radius: 99px; background: #F1F1EF; font-size: 8.4pt; }
+  .duas { display: flex; gap: 10mm; }
+  .duas p + p { margin-top: 0; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Nicolas Silveira Ribeiro</h1>
+    <p class="cargo"><b>Desenvolvedor de software</b> · Estudante de Ciência da Computação</p>
+    <p class="contato">
+      <span>Brasília, DF</span>
+      <a href="mailto:nicolas.riber@gmail.com">nicolas.riber@gmail.com</a>
+      <a href="https://www.linkedin.com/in/nicolas-silveira-ribeiro/">linkedin.com/in/nicolas-silveira-ribeiro</a>
+      <a href="https://github.com/nicolasriber19">github.com/nicolasriber19</a>
+      <a href="https://nicolasriber19.github.io/site-pessoal/">nicolasriber19.github.io/site-pessoal</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Resumo</h2>
+    <div>
+      <p class="resumo">Estudante de Ciência da Computação no CEUB e desenvolvedor no WRW, uma plataforma de networking de negócios com inteligência artificial, em 10 idiomas. Gosto de transformar ideias em produtos que funcionam de verdade e construo os meus próprios apps. Busco estágio em desenvolvimento de software.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experiência</h2>
+    <div>
+      <div class="item">
+        <div class="item__topo">
+          <h3>Desenvolvedor de software <span>· WRW (Women Rocking the World)</span></h3>
+          <span class="quando">ago. 2026 – atual</span>
+        </div>
+        <p class="onde">Plataforma feita para uma cliente · <a href="https://wrwglobal.org">wrwglobal.org</a></p>
+        <ul>
+          <li>Um dos quatro desenvolvedores; segundo maior contribuidor do código (95 commits).</li>
+          <li>Smart Match: regras do cruzamento por IA entre o que cada membro oferece e procura, inclusive em chinês, japonês, árabe, russo e hindi.</li>
+          <li>Análise dos pedidos de interesse pelo distribuidor e nome revelado só com interesse mútuo.</li>
+          <li>Globo 3D “Rede viva” da página inicial, que mostra a rede e gira com a rolagem.</li>
+          <li>Plataforma em 10 idiomas; reuniões gravadas que podem ser ouvidas e reprocessadas na IA.</li>
+          <li>Revisão dos pull requests da equipe. Agora, o app para a App Store e a Play Store.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="item__topo">
+          <h3>Conselheiro de Inovação <span>· ACDF Jovem</span></h3>
+          <span class="quando">nov. 2026 – atual</span>
+        </div>
+        <p class="onde">Associação Comercial do Distrito Federal · gestão 2025/2028</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Formação</h2>
+    <div>
+      <div class="item">
+        <div class="item__topo">
+          <h3>Bacharelado em Ciência da Computação <span>· UniCEUB</span></h3>
+          <span class="quando">fev. 2026 – dez. 2029 (previsto)</span>
+        </div>
+        <p class="onde">Cursando o 2º semestre</p>
+      </div>
+      <div class="item">
+        <div class="item__topo">
+          <h3>Ensino médio <span>· Escola Salesiana Brasília</span></h3>
+          <span class="quando">concluído em 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projetos</h2>
+    <div>
+      <div class="item">
+        <h3>Jarvis <span>· assistente pessoal de IA</span></h3>
+        <p class="onde">Em Python: entende voz, responde falando, acorda com “Hey Jarvis”, agenda e Telegram.</p>
+      </div>
+      <div class="item">
+        <h3>Evolui e Placar da Vida <span>· apps de evolução pessoal</span></h3>
+        <p class="onde">Hábitos e metas. Evolui: PWA em React (<a href="https://evolui-gilt.vercel.app">evolui-gilt.vercel.app</a>). Placar da Vida: também Android.</p>
+      </div>
+      <div class="item">
+        <h3>Patas em Casa <span>· projeto em grupo no CEUB</span></h3>
+        <p class="onde">App de adoção de cães e gatos, na disciplina de Engenharia de Software.</p>
+      </div>
+      <div class="item">
+        <h3>Site pessoal</h3>
+        <p class="onde">Vite e JavaScript, conteúdo em JSON, deploy automático no GitHub Pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Competências</h2>
+    <div class="chips">
+      <span>Python</span><span>JavaScript</span><span>React</span><span>HTML e CSS</span><span>Git e GitHub</span><span>Inteligência artificial</span><span>Revisão de código</span><span>Trabalho em equipe</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <div class="duas">
+      <p><b>Português</b> · nativo</p>
+      <p><b>Inglês</b> · intermediário</p>
+    </div>
+  </section>
+</body>
+</html>

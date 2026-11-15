@@ -109,6 +109,13 @@ O título da linha 03 se ajusta sozinho: "Minha trajetória até aqui." só com 
 
 O PDF ou a imagem vai em `public/certificados/`. `arquivo` e `verificacao` podem ficar vazios.
 
+### Currículo em PDF
+
+O texto fica em `curriculo/curriculo.html` (mesmo estilo do site, A4, uma página). Depois de editar, rode
+`node curriculo/gerar.mjs`: ele gera `public/curriculo-nicolas-ribeiro.pdf` pelo Chrome e avisa se
+passou de uma página (a imagem `curriculo/previa.png` serve para conferir). O botão "Baixar currículo"
+na faixa de contato aparece quando `perfil.json` tem `"curriculo"`.
+
 ### Prévia do link (WhatsApp, LinkedIn)
 
 Em `perfil.json`: `"site"` (endereço completo do site), `"previa"` (imagem em `public/`, hoje `previa.jpg`,

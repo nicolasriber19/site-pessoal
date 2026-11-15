@@ -127,6 +127,11 @@
 .faixa__texto p { margin: 14px 0 0; color: var(--sc-ink-soft); }
 .faixa__texto a { color: var(--sc-ink); font-weight: 500; overflow-wrap: anywhere; }
 .faixa__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; flex-shrink: 0; }
+/* no celular: os botões com texto ocupam a linha inteira e os ícones das redes ficam juntos embaixo */
+@media (max-width: 600px) {
+  .faixa__acoes { align-self: stretch; }
+  .faixa__acoes .pilula:not(.pilula--icone) { flex: 1 1 100%; justify-content: space-between; }
+}
 
 /* ============================================================= rodapé == */
 .rodape { padding-block: clamp(20px, 3vw, 32px) clamp(28px, 4vw, 44px); }

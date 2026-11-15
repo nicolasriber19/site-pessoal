@@ -83,6 +83,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em
 .pilula--icone { width: 48px; padding: 0; justify-content: center; }
 @media (hover: hover) and (pointer: fine) {
   .pilula--icone:hover svg { transform: none; }
+  .pilula--baixar:hover svg { transform: translateY(2px); }
 }
 
 /* ------------------------------------------------------ lugar de imagem -- */
